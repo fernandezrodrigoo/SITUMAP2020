@@ -1,0 +1,55 @@
+{
+  "homeCamera": {
+    "north": -8,
+    "east": 158,
+    "south": -45,
+    "west": 109
+  },
+  "catalog": [
+    {
+      "name": "Información Base",
+      "type": "group",
+      "items": [
+            {
+              "name": "SITU WMS",
+              "type": "wms",
+              "url": "http://geoserver.fadu.edu.uy:8080/geoserver/InformacionDeReferencia/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+              "description": "...",
+              "abstract": "SITUuuuuuuuuuuu",
+              "layers": "Canelones-Microrregiones",
+              "getFeatureInfoAsGeoJson": true
+            },
+		    {
+			  "name": "SITU Información de referencia",
+			  "description": "Información Geográfica de caràcter público proveniente de los distintos nodos IDE",	
+			  "type": "wfs-getCapabilities",
+			  "url": "http://geoserver.fadu.edu.uy:8080/geoserver/InformacionDeReferencia/wfs?"
+        	}
+      ]
+    },
+	{
+      "name": "Producción del IETU",
+      "type": "group",
+      "items": [
+		    {
+			  "name": "Sistema Urbano Nacional del Uruguay: Una caracterización con base en la movilidad de pasajeros.",
+			  "description": "El trabajo aborda el análisis del Sistema Urbano Nacional (SUN), entendido de modo amplio como distribución y relaciones de los episodios urbanos en el territorio nacional. Como objetivo general plantea describir y caracterizar el Sistema Urbano de Uruguay a partir del análisis de la movilidad de pasajeros entre los centros poblados del país. Como objetivos particulares busca describir la composición y estructura del SUN a escala país, de sus subsistemas y a nivel de nodos, para evaluar los cambios en la composición y estructura del SUN entre 2004 y 2014, estudiar los vínculos entre los principales centros urbanos del país en términos de niveles de asociación y de subordinación o independencia, y caracterizar los subsistemas en términos de policentralidad funcional. Mediante un enfoque sistémico y la interpretación de diversas bases de datos de flujos de personas entre los centros urbanos, se distinguen y caracterizan a distintas escalas tanto el sistema general como los subsistemas y los nodos. Para ello, se recurre al procesamiento e interpretación en paralelo de tres fuentes principales (Datos del Tránsito Promedio Diario Anual de la DNV-MTOP 2004-2014; Circuitos y Flujos de Transporte de Pasajeros Interurbanos 2015 relevados por el equipo 1703/CSIC; y datos sobre la Movilidad por Motivos Laborales del Censo INE 2011), y tres fuentes complementarias: caudal de flujos de transporte de pasajeros por rutas, Patrones de movilidad interurbana por trabajo y Circuitos del transporte colectivo.",	
+			  "type": "wfs-getCapabilities",
+			  "url": "http://geoserver.fadu.edu.uy:8080/geoserver/investigacionITU/SUNU/wfs?"
+        	},
+		    {
+			  "name": "Lógicas territoriales del Uruguay agroexportador: un análisis de implicancias espaciales de las principales cadenas productivas agroindustriales del país.",
+			  "description": "Este trabajo aborda el estudio de las implicancias territoriales de las principales cadenas productivas agroindustriales del país: soja, forestación (aserrío y celulósica), arroz, carne y leche. Mediante el procesamiento de datos para los años 2011-2014 de producción, logística y empleo, junto a la generación de cartografía georreferenciada SIG, el trabajo propone la descripción territorial tanto de los procesos productivos y logísticos como de las cuencas de empleo de las principales cadenas agroexportadoras. Para ello recurrió como fuentes principales al Estudio de Demanda y Modelo de Asignación Modal de Transporte Interurbano de Carga en Uruguay (MTOP/DINAPLO, 2016) y a la Encuesta Continua de Hogares del Instituto Nacional de Estadística para los años 2013, 2014 y 2015.Como complemento de las lecturas por sector productivo se plantean luego una serie de estudios transversales que -en base a las mismas fuentes- analizan primero una serie de variables socioeconómicas de los ocupados en las cadenas en estudio y la vocación productiva de las ciudades intermedias, y, por último, indagan la relación entre las dinámicas productivas regionales y el sistema urbano nacional.",	
+			  "type": "wfs-getCapabilities",
+			  "url": "http://geoserver.fadu.edu.uy:8080/geoserver/investigacionITU/LTUA/wfs?"
+        	},
+		    {
+			  "name": "Modelado de Normativa Urbana.",
+			  "description": "El proyecto busca experimentar y estudiar el potencial de los sistemas de información geográfica y de otras herramientas digitales como plataformas para la planificación urbana; incluyendo la modelización y diseño de normativa urbana, la prefiguración de los posibles desarrollos y el cálculo de los aumentos de carga sobre las infraestructuras urbanas que los marcos normativos generan. Mediante la experimentación en entornos concretos se buscará profundizar los campos de utilización de estas herramientas como apoyo a la planificación urbana y su estudio prospectivo definiendo posibles estrategias metodológicas.",	
+			  "type": "wfs-getCapabilities",
+			  "url": "http://geoserver.fadu.edu.uy:8080/geoserver/investigacionITU/MODURB/wfs?"
+        	}
+      ]
+    }  
+  ]
+}
